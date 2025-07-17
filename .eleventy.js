@@ -12,11 +12,14 @@ module.exports = function (eleventyConfig) {
   // Copy the css folder to output
   eleventyConfig.addPassthroughCopy("src/css");
 
+  // Add global data variable "baseurl" for GitHub Pages repo subfolder
+  eleventyConfig.addGlobalData("baseurl", "/mtm6407-static-site-sahilmalik9");
+
   return {
     dir: {
       input: "src",
       includes: "_includes",
-      output: "docs"   // changed from dist to docs
+      output: "docs"
     }
   };
 };

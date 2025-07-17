@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
-
+    <!-- Use baseurl for css path -->
+    <link rel="stylesheet" href="{{ baseurl }}/css/style.css" />
   </head>
   <body>
     <header>
       <h1>Welcome to Sahil Malik's Site</h1>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/projects/">Projects</a></li>
-          <li><a href="/hobbies/">Hobbies</a></li>
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="{{ baseurl }}/">Home</a></li>
+          <li><a href="{{ baseurl }}/about/">About</a></li>
+          <li><a href="{{ baseurl }}/projects/">Projects</a></li>
+          <li><a href="{{ baseurl }}/hobbies/">Hobbies</a></li>
+          <li><a href="{{ baseurl }}/contact/">Contact</a></li>
         </ul>
       </nav>
     </header>
