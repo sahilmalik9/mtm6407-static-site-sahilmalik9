@@ -17,6 +17,7 @@ module.exports = function(eleventyConfig) {
       input: "src",
       includes: "_includes",
       output: "docs"
-    }
+    },
+    pathPrefix: "/mtm6407-static-site-sahilmalik9/" // 💡 Add this line for GitHub Pages
   };
 };
