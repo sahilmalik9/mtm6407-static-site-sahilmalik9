@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Home</title>
-    <link rel="stylesheet" href="/mtm6407-static-site-sahilmalik9/css/style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to Sahil Malik's Site</h1>
-      <nav>
-        <ul>
-          <li><a href="/mtm6407-static-site-sahilmalik9/">Home</a></li>
-          <li><a href="/mtm6407-static-site-sahilmalik9/about/">About</a></li>
-          <li><a href="/mtm6407-static-site-sahilmalik9/projects/">Projects</a></li>
-          <li><a href="/mtm6407-static-site-sahilmalik9/hobbies/">Hobbies</a></li>
-          <li><a href="/mtm6407-static-site-sahilmalik9/contact/">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>Home</title>
+  <link rel="stylesheet" href="/mtm6407-static-site-sahilmalik9/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Sahil Malik's Site</h1>
+    <nav>
+      <ul>
+        <li><a href="/mtm6407-static-site-sahilmalik9/">Home</a></li>
+        <li><a href="/mtm6407-static-site-sahilmalik9/about/">About</a></li>
+        <li><a href="/mtm6407-static-site-sahilmalik9/projects/">Projects</a></li>
+        <li><a href="/mtm6407-static-site-sahilmalik9/hobbies/">Hobbies</a></li>
+        <li><a href="/mtm6407-static-site-sahilmalik9/contact/">Contact</a></li>
+        <button id="darkToggle">🌙 Toggle Dark Mode</button>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      
-<h2>Welcome to My Personal Site</h2>
+  <main>
+    
 <img src="/mtm6407-static-site-sahilmalik9/images/sahil.jpg" alt="Sahil Malik" class="profile-photo" />
 
-<p>Hello! I'm Sahil Malik, a passionate web developer and tech enthusiast. This site showcases my projects, hobbies, and ways to contact me.</p>
+<p>Hey! I'm Sahil Malik. Welcome to my personal site — here you’ll find my projects, hobbies, and ways to get in touch.</p>
 
-<p>Feel free to explore the pages using the navigation above.</p>
+  </main>
 
-    </main>
+  <footer>
+    <p>&copy; 2025 Sahil Malik</p>
+  </footer>
 
-    <footer>
-      <p>&copy; 2025 Sahil Malik</p>
-    </footer>
-  </body>
+  <script>
+    const toggle = document.getElementById("darkToggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      localStorage.setItem("theme",
+        document.body.classList.contains("dark") ? "dark" : "light");
+    });
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+    }
+  </script>
+</body>
 </html>
