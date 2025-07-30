@@ -1,0 +1,27 @@
+{
+  "name": "mtm6407-static-site-sahilmalik9",
+  "version": "1.0.0",
+  "description": "**Name:** Sahil Malik  \r **Student Number:** 90541145235  \r **Static Site Generator Used:** Eleventy",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilmalik9/mtm6407-static-site-sahilmalik9.git"
+  },
+  "keywords": [],
+  "author": "Sahil Malik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilmalik9/mtm6407-static-site-sahilmalik9/issues"
+  },
+  "homepage": "https://github.com/sahilmalik9/mtm6407-static-site-sahilmalik9#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "luxon": "^3.7.1"
+  }
+}

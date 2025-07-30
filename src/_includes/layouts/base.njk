@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Sahil Malik's Site</h1>
+      <nav>
+        <ul>
+          <li><a href="{{ '/' | url }}">Home</a></li>
+          <li><a href="{{ '/about/' | url }}">About</a></li>
+          <li><a href="{{ '/projects/' | url }}">Projects</a></li>
+          <li><a href="{{ '/hobbies/' | url }}">Hobbies</a></li>
+          <li><a href="{{ '/contact/' | url }}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer>
+      <p>&copy; {{ "now" | date("yyyy") }} Sahil Malik</p>
+    </footer>
+  </body>
+</html>
